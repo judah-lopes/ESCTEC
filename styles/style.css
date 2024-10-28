@@ -14,12 +14,6 @@ body {
 }
 
 /* Cabeçalho */
-img{
-    width: 10px;
-    height: 10px;
-}
-
-/* Cabeçalho */
 header {
     background-color: #333;
     color: white;
@@ -56,8 +50,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-.hover-menu
-{
+.drop-list{
     display: none;
 }
 .dropdown:hover ul
