@@ -1,0 +1,31 @@
+img
+{
+    width: 10px;
+    height: 10px;
+}
+
+nav
+{
+    display: flex;
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.hover-menu
+{
+    display: none;
+}
+.dropdown:hover ul
+{
+    display: block;
+}
+
+/* .hover-menu:hover
+{
+    display: block;
+} */
