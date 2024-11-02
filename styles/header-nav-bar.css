@@ -94,7 +94,6 @@ nav ul li {
   width: 86px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
 
 
 }
@@ -117,7 +116,7 @@ nav ul li:hover {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+
 
 }
 
@@ -130,13 +129,13 @@ nav ul li a {
 
 
 
-  height: 100px;j
+  height: 100px;
   color: white;
   text-decoration: none;
   font-weight: bold;
   background-color: #ac9595; */
 
-  background-color: #3498db;
+  background-color: #947272;
   /* Cor do botão */
   color: white;
 
@@ -165,20 +164,18 @@ nav ul li a {
   border: none;
   /* Remover borda */
   cursor: pointer;
+  background-color: #333;
 }
 
 .dropbtn:hover,
-.dropbtn:focus {
-  background-color: #2980b9;
-  /* Cor ao passar o mouse */
-}
+.dropbtn:focus {}
 
 /* Estilo do conteúdo do dropdown */
 .dropdown-content {
   display: none;
   /* Esconder por padrão */
   position: absolute;
-  background-color: #f9f9f9;
+
   /* Cor de fundo do menu */
 
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -187,7 +184,6 @@ nav ul li a {
 }
 
 .dropdown-content a {
-  color: black;
 
   /* Espaçamento interno dos itens */
   text-decoration: none;
@@ -196,7 +192,7 @@ nav ul li a {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+
   /* Cor de fundo ao passar o mouse */
 }
 
