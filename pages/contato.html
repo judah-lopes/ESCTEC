@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="../assets/img/logo.jpg" alt="Logotipo da ESCTEC">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown"><a href="Empresa/empresa.html">A empresa</a>
+                    <ul class="drop-list">
+                        <li><a href="Empresa/missao.html">Missão</a></li>
+                        <li><a href="Empresa/valores.html">Valores</a></li>
+                        <li><a href="Empresa/visao.html">Visão</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Pedidos/produtos.html">Produtos</a>
+                    <ul class="drop-list">
+                        <li><a href="Produtos/mesas.html">Mesas</a></li>
+                        <li><a href="Produtos/cadeiras.html">Cadeiras</a></li>
+                        <li><a href="Produtos/diversos.html">Diversos</a></li>
+                    </ul>
+                </li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3>Contato</h3>
+    <div class="contato-imagem-classe">
+        <form>
+            <div>
+                <label for="fnome">Nome</label><br>
+                <input type="text" id="fnome-id" name="fnome" placeholder="Nome" required><br><br>
+
+                <label for="fempresa">Empresa</label><br>
+                <input type="text" id="fempresa-id" name="fempresa" placeholder="Empresa" required><br><br>
+                
+                <label for="fcidade">Cidade</label><br>
+                <input type="text" id="fcidade-id" name="fcidade" placeholder="Cidade" required><br><br>
+                
+                <label for="ftelefone">Telefone</label><br>
+                <input type="tel" id="ftelefone-id" name="ftelefone" placeholder="Telefone" required><br><br>
+
+                <label for="femail">Email</label><br>
+                <input type="email" id="femail-id" name="femail" placeholder="Email" required><br><br>
+                
+                <label for="departamento-id">Departamento</label><br>
+                <select id="departamento-id" name="departamento" required>
+                    <option value="">Selecione um departamento</option>
+                    <option value="Departamento para Contato">Departamento para Contato</option>
+                </select><br><br>
+                
+                <!-- Checkbox -->
+                <label>Como conheceu o ESCTEC?</label><br>
+                <input type="checkbox" id="indicacao-id" name="indicacao" value="Indicação">
+                <label for="indicacao-id">Indicação</label><br>
+
+                <input type="checkbox" id="email-id" name="email" value="Email">
+                <label for="email-id">Email</label><br>
+
+                <input type="checkbox" id="buscadores-id" name="buscadores" value="Buscadores">
+                <label for="buscadores-id">Buscadores</label><br><br>
+                
+                <!-- Área de Texto -->
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem-id" name="mensagem" rows="3" cols="20" required></textarea><br><br>
+                
+                <!-- Botões -->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2013 ESCTEC Brasil - telefone (xx) xxxx-xxxx | 
+        <a href="mailto:">faleconosco@esctecbrasil.com.br</a></p>
+    </footer>
+</body>
+</html>
