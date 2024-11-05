@@ -13,51 +13,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-}
-
-#logo img {
-    width: 100px;
-}
-
-nav{
-    display: flex;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.drop-list{
-    display: none;
-}
-.dropdown:hover ul
-{
-    display: block;
-}
-
 /* Conteúdo principal */
 h1 {
     text-align: center;
