@@ -1,7 +1,7 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -11,6 +11,35 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+
+.main-elements {
+
+    /* Definimos a alguma e lagura do item com width e height, 
+    definimos que ele terá uma lagura (width) baseada na tela, e uma altura (heigth) fixa
+    de 86px */
+    width: 95%;
+    height: 100%;
+
+    /* Nesta parte, temos margin controlando a 'autoposição' do item,
+    o lugar dele dentro do espçao da pagina web, detrmindando que ele irá ficar
+    no centro */
+    margin: 0px auto;
+
+    /* Aqui definimos as cores, e cmo elas irão se comportar no background e nos
+    elemnetos internos. */
+    color: rgb(0, 0, 0);
+
+
+    /* Neste momento display flex determina como os itens
+    precisam se comportar dentro do container do objeto, neste caso, 
+    '.boxheader', e utilizamos suas ferramentas para controlar o itens 
+    internos, como aling-items e justify-content. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* Conteúdo principal */

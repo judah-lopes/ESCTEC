@@ -5,34 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header-nav-bar.css">
+    <link rel="stylesheet" href="../styles/style-contato.css">
+
 </head>
 
 <body>
-    <header>
-            <img src="../../assets/img/logo.jpg" alt="Logotipo da ESCTEC">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li class="dropdown"><a href="Empresa/empresa.html">A empresa</a>
-                    <ul class="drop-list">
-                        <li><a href="Empresa/missao.html">Missão</a></li>
-                        <li><a href="Empresa/valores.html">Valores</a></li>
-                        <li><a href="Empresa/visao.html">Visão</a></li>
+    <div class="main-elements">
+        <!-- Cabeçalho -->
+        <header>
+       
+            <div class="boxheader">
+    
+                <div id="logo">
+                    <img src="../assets/img/logowt.png" alt="Logotipo da ESCTEC">
+                </div>
+                <nav>
+                    <ul>  
+                        <li><a href="pages/pedidos.html">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">A empresa</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Missão</a>
+                                  <a href="#">Valores</a>
+                                  <a href="#">Visão</a>
+                                </div>
+                              </div>
+                            
+                            
+                         
+                   
+                        <li class="dropdown">
+    
+                            <div class="dropdown">
+                                <button class="dropbtn">Produtos</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Mesas</a>
+                                  <a href="#">Cadeiras</a>
+                                  <a href="#">Diversos</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li><a href="pages/pedidos.html">Pedidos</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
                     </ul>
-                </li>
-                <li class="dropdown"><a href="Produtos/produtos.html">Produtos</a>
-                    <ul class="drop-list">
-                        <li><a href="Produtos/mesas.html">Mesas</a></li>
-                        <li><a href="Produtos/cadeiras.html">Cadeiras</a></li>
-                        <li><a href="Produtos/diversos.html">Diversos</a></li>
-                    </ul>
-                </li>
-                <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+                </nav>
+            </div>
+        </header>
     <h3>Contato</h3>
     <div class="contato-imagem-classe">
         <form>
@@ -84,5 +104,6 @@
         <p>&copy; 2013 ESCTEC Brasil - telefone (xx) xxxx-xxxx | 
         <a href="mailto:">faleconosco@esctecbrasil.com.br</a></p>
     </footer>
+</div>
 </body>
 </html>

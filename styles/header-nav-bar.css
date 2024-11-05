@@ -1,84 +1,39 @@
-/* Inicio Header Padrão : */
-*,
-::after,
-:hover {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main-elements {
 
-  /* Definimos a alguma e lagura do item com width e height, 
-  definimos que ele terá uma lagura (width) baseada na tela, e uma altura (heigth) fixa
-  de 86px */
-  width: 95%;
-  height: 100%;
-
-  /* Nesta parte, temos margin controlando a 'autoposição' do item,
-  o lugar dele dentro do espçao da pagina web, detrmindando que ele irá ficar
-  no centro */
-  margin: 0px auto;
-
-  /* Aqui definimos as cores, e cmo elas irão se comportar no background e nos
-  elemnetos internos. */
-  color: white;
-  background-color: #947272;
-
-  /* Neste momento display flex determina como os itens
-  precisam se comportar dentro do container do objeto, neste caso, 
-  '.boxheader', e utilizamos suas ferramentas para controlar o itens 
-  internos, como aling-items e justify-content. */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .boxheader {
-  /* Definimos a alguma e lagura do item com width e height, 
-  definimos que ele terá uma lagura (width) baseada na tela, e uma altura (heigth) fixa
-  de 86px */
   width: 98%;
   height: 56px;
-
-  /* Neste momento display flex determina como os itens
-  precisam se comportar dentro do container do objeto, neste caso, 
-  '.boxheader', e utilizamos suas ferramentas para controlar o itens 
-  internos, como aling-items e justify-content. */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
-  /* Padding da um distanciamento internos dos itens da 'parede' do elemento pai. */
   padding: 0px 36px;
-
-  /* Nesta parte, temos margin controlando a 'autoposição' do item,
-  o lugar dele dentro do espçao da pagina web, detrmindando que ele irá ficar
-  no centro, e dizendo que ele tera bordar arrendondas. */
   margin: 0.8em;
   border-radius: 8px 0px 8px 0px;
-
-  /* Aqui definimos as cores, e cmo elas irão se comportar no background e nos
-  elemnetos internos. */
   color: white;
-  background-color: #333;
+  background-color: #080808;
 }
 
 #logo {
+  height: 95%;
   display: flex;
   align-items: center;
-
 }
 
-#logo img {
-  width: 10%;
-  height: 50%;
+.boxheader #logo img {
+  height: 95%;
+
 }
 
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -91,112 +46,67 @@ nav ul {
 }
 
 nav ul li {
-  width: 86px;
+
   color: white;
-  text-decoration: none;
-
-
-}
-
-nav ul li:hover {
-
-  height: 56px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #ac9595;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
+  position: relative;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-
-
-}
-
-.drop-list {
-  display: none;
-}
-
-.dropdown:hover ul {
-  /* display: block;
-
-
-
-  height: 100px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #ac9595; */
-
-  background-color: #947272;
-  /* Cor do botão */
-  color: white;
-
-
-  /* Tamanho da fonte */
-  border: none;
-  /* Remover borda */
-  cursor: pointer;
-
-
-}
-
-/* Estilo do botão principal do dropdown */
-.dropdown {
-  position: relative;
+  padding: 10px 20px;
   display: inline-block;
 }
 
+nav ul li:hover {
+  background-color: #586F7C;
+}
+
+.dropdown {
+  position: relative;
+}
+
 .dropbtn {
-
-  color: white;
-
-  /* Espaçamento interno */
   font-size: 16px;
-  /* Tamanho da fonte */
   border: none;
-  /* Remover borda */
   cursor: pointer;
-  background-color: #333;
+  background-color: #080808;
+  color: white;
+  padding: 10px 20px;
 }
 
 .dropbtn:hover,
-.dropbtn:focus {}
+.dropbtn:focus {
+  background-color: #586F7C;
+}
 
-/* Estilo do conteúdo do dropdown */
 .dropdown-content {
   display: none;
-  /* Esconder por padrão */
   position: absolute;
-
-  /* Cor de fundo do menu */
-
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  /* Sombra */
+  top: 100%;
+  left: 0;
+  background-color: #586F7C;
+  min-width: 160px;
   z-index: 1;
+  border-radius: 4px;
 }
 
 .dropdown-content a {
-
-  /* Espaçamento interno dos itens */
+  color: white;
+  padding: 12px 16px;
   text-decoration: none;
-  /* Remover sublinhado */
   display: block;
 }
 
 .dropdown-content a:hover {
-
-  /* Cor de fundo ao passar o mouse */
+  background-color: #B8DBD9;
+  color: #080808;
 }
 
-/* Exibir o conteúdo ao passar o mouse sobre o botão */
 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul li:hover .dropdown-content {
   display: block;
 }
