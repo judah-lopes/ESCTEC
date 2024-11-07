@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    --cor-primaria: #586F7C;
+    --cor-secundaria: #B8DBD9;
+    --cor-terciaria: #04724D;
+    --cor-bg: #f4f4f9;
 }
 
 /* Configuração base */
@@ -10,7 +15,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--cor-bg);
 }
 
 /* Cabeçalho */
@@ -70,11 +75,10 @@ main {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: var(--cor-primaria);
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
     width: 100%;
     bottom: 0;
 }
