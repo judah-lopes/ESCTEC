@@ -1,9 +1,9 @@
+// FUNÇÃO DE COMBOBOX PARA PREENCHER VENDEDOR
 function preencherFormularioVendedores() {
     const vendedorSelecionado = document.getElementById("vendedor");
     const valorVendedorSelecionado = vendedorSelecionado.value;
 
     const fEmpresa = document.getElementById("empresa");
-    const fCnpj = document.getElementById("cnpj");
     const fEndereco = document.getElementById("endereco");
     const fCidade = document.getElementById("cidade");
     const fUf = document.getElementById("uf");
@@ -38,8 +38,7 @@ function preencherFormularioVendedores() {
     }
 }
 
-//!---------------------------------------
-
+// FUNÇÃO COMBOBOX PRA PREENCHER PRODUTO, VALOR ETC.
 function preencherFormularioProd(selectElement) {
     // Encontrar o contêiner pai (.produto-item) que contém o select atual
     const produtoItem = selectElement.closest('.produto-item');
@@ -91,22 +90,44 @@ function preencherFormularioProd(selectElement) {
     }
 }
 
+// FUNÇÃO PRA CALCULAR O VALOR TOTAL DE CADA PRODUTO
 function calcValorTotalProduto(element) {
     // Encontrar o contêiner pai (.produto-item) do campo de quantidade alterado
-    const produtoItem = element.closest('.produto-item');
+    var produtoItem = element.closest('.produto-item');
 
     // Selecionar os campos dentro do mesmo produto-item
-    const qtdSelecionada = produtoItem.querySelector('.qtd').value;
-    const valorProd = produtoItem.querySelector('.valor').value;
-    const fTotal = produtoItem.querySelector('.total');
+    var qtdSelecionada = produtoItem.querySelector('.qtd').value;
+    var valorProd = produtoItem.querySelector('.valor').value;
+    var fTotal = produtoItem.querySelector('.total');
 
     // Calcular o valor total
-    const valorTotal = qtdSelecionada * valorProd;
+    var valorTotal = qtdSelecionada * valorProd;
 
     // Exibir o valor total no campo correspondente
     fTotal.value = valorTotal ? valorTotal.toFixed(2) : ''; // Exibir vazio se não houver valor
+
+    // Atualiza o valor total do pedido
+    calcularValorTotalPedido();
 }
 
+// FUNção PRA CALCULAR O VALOR TOTAL DO PEDIDO
+function calcularValorTotalPedido() {
+    // Seleciona todos os campos de valor total de cada produto
+    var totalProdutos = document.querySelectorAll('.produto-item .total');
+    var somaTotal = 0;
+
+    // Percorre cada total individual e adiciona ao valor total do pedido
+    for (var i = 0; i < totalProdutos.length; i++) {
+        var valor = parseFloat(totalProdutos[i].value) || 0; // Converte para número, ou 0 se estiver vazio
+        somaTotal += valor;
+    }
+
+    // Preenche o campo de valor total do pedido com a soma total calculada
+    var campoValorTotalPedido = document.getElementById('valor-total');
+    campoValorTotalPedido.value = somaTotal.toFixed(2);
+}
+
+// FUNÇÃO ADICIONAR PRODUTO
 let contadorProdutos = 2;
 
 function adicionarProduto() {
@@ -166,3 +187,31 @@ function adicionarProduto() {
     // Adicionar o novo produto ao containerProdutos
     containerProdutos.appendChild(novoProduto);
 }
+
+// FUNÇÃO DE SAUDAÇÃO
+function exibirSaudacao() {
+    const saudacaoDiv = document.getElementById('saudacao');
+    const hora = new Date().getHours();
+    let mensagem;
+
+    if (hora >= 6 && hora < 12) {
+        mensagem = "Bom dia!";
+    } else if (hora >= 12 && hora < 18) {
+        mensagem = "Boa tarde!";
+    } else {
+        mensagem = "Boa noite!";
+    }
+
+    saudacaoDiv.textContent = mensagem;
+    saudacaoDiv.style.color = "white"; // Ajuste de cor conforme o tema
+    saudacaoDiv.style.fontSize = "1.2em";
+    saudacaoDiv.style.marginTop = "8px"; // Ajuste de espaçamento
+    saudacaoDiv.style.display = "block"; // Exibe a div de saudação
+
+    // Oculta a saudação após 5 segundos
+    setTimeout(() => {
+        saudacaoDiv.style.display = "none";
+    }, 3000);
+}
+
+window.onload = exibirSaudacao; // Executa a função ao carregar a página

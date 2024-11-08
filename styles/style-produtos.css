@@ -46,7 +46,7 @@ h4 {
   margin: 10px 0;
 }
 
-p {
+.cor, .preco {
   color: #666;
   margin: 5px 0;
 }

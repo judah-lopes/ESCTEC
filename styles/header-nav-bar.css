@@ -17,14 +17,44 @@ color: white;
 background-color: var(--cor-primaria);
 }
 
+
 #logo {
-height: 90%;
-display: flex;
-align-items: center;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+#logo img {
+    height: 90%;
 }
 
-#logo img {
-height: 90%;
+#saudacao {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 35px;
+    padding: 10px 15px;
+
+    display: none; /* Oculta a saudação inicialmente */
+    position: relative;
+    align-self: flex-start;
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+    
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#saudacao::after {
+    content: "";
+    position: absolute;
+    top: -18px; /* Posição da seta em relação ao balão */
+    left: 10%;
+    
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--cor-terciaria) transparent;
 }
 
 nav {
@@ -53,7 +83,7 @@ text-decoration: none;
 color: white;
 }
 
-.dropdown:hover, .dropdown a:hover {
+.dropdown:hover, nav a:hover {
     color: var(--cor-terciaria);
     background-color: var(--cor-secundaria);
 }
