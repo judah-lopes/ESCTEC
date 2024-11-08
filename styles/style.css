@@ -54,14 +54,16 @@ h1 {
 }
 
 main {
-    height: 80vh;
     padding: 20px;
+}
+.empresa {	
+    height: 80vh;
 }
 
 /* Rodapé */
 footer {
     background-color: var(--cor-primaria);
-    color: white;
+    color: white!important;
     text-align: center;
     padding: 10px;
     /* position: absolute; */
