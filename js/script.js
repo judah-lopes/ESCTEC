@@ -38,6 +38,20 @@ function preencherFormularioVendedores() {
     }
 }
 
+// FUNÇÃO CARROSSEL
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(showNextSlide, 3000); // Muda a imagem a cada 3 segundos
+});
+
 // FUNÇÃO COMBOBOX PRA PREENCHER PRODUTO, VALOR ETC.
 function preencherFormularioProd(selectElement) {
     // Encontrar o contêiner pai (.produto-item) que contém o select atual
