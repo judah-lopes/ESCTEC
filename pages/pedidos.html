@@ -13,12 +13,12 @@
         <!-- Cabeçalho -->
         <header>
             <div id="logo">
-                <img src="../assets/img/logowt.png" alt="Logotipo da ESCTEC">
+                <img src="../assets/imgs/logo/logowt.png" alt="Logotipo da ESCTEC">
             </div>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li class="dropdown"><a href="Empresa/empresa.html">A empresa</a>
+                    <li class="dropdown"><a>A empresa</a>
                         <ul class="drop-list">
                             <li><a href="Empresa/missao.html">Missão</a></li>
                             <li><a href="Empresa/valores.html">Valores</a></li>
@@ -55,25 +55,25 @@
                         </select><br><br>
 
                         <label for="empresa">Empresa</label><br>
-                        <input type="text" id="empresa" name="empresa" placeholder="Empresa" required><br><br>
+                        <input type="text" id="empresa" name="empresa" placeholder="Empresa" required readonly><br><br>
 
                         <label for="cnpj">CNPJ</label><br>
-                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required><br><br>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required readonly><br><br>
 
                         <label for="endereco">Endereço</label><br>
-                        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required><br><br>
+                        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required readonly><br><br>
 
                         <label for="cidade">Cidade</label><br>
-                        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required><br><br>
+                        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required readonly><br><br>
 
                         <label for="uf">UF</label><br>
-                        <input type="text" id="uf" name="uf" placeholder="UF" required><br><br>
+                        <input type="text" id="uf" name="uf" placeholder="UF" required readonly><br><br>
 
                         <label for="telefone">Telefone</label><br>
-                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required readonly><br><br>
 
                         <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required readonly><br><br>
 
                         <h4>Itens de Produto</h4>
                         <div id="produtos">
@@ -119,7 +119,7 @@
                                 <input type="text" class="total" placeholder="Valor Total" readonly>
                             </div>
                         </div>
-                        <button onclick="adicionarProduto()">Adicionar Produto</button>
+                        <button id="btn-adicionar" onclick="adicionarProduto()">Adicionar Produto</button>
 
                         <label for="valor-total">Valor Total do Pedido</label><br>
                         <input type="text" id="valor-total" name="valor_total" placeholder="Valor Total do Pedido" readonly><br><br>

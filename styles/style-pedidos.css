@@ -122,9 +122,23 @@ form input[type="reset"]:hover {
   margin-top: 10px;
 }
 
+#btn-adicionar {
+  width: auto;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#valor-total {
+  border-bottom: 1px solid #ccc;
+
+}
+
 /* Rodapé */
 footer {
-  background-color: #333;
   color: white;
   text-align: center;
   padding: 10px 0;
