@@ -22,7 +22,6 @@ function preencherFormularioVendedores() {
     // Preencher campos com base no vendedor selecionado
     if (dadosVendedores[valorVendedorSelecionado]) {
         fEmpresa.value = dadosVendedores[valorVendedorSelecionado].empresa;
-        fCnpj.value = dadosVendedores[valorVendedorSelecionado].cnpj;
         fEndereco.value = dadosVendedores[valorVendedorSelecionado].endereco;
         fCidade.value = dadosVendedores[valorVendedorSelecionado].cidade;
         fUf.value = dadosVendedores[valorVendedorSelecionado].uf;
@@ -31,7 +30,6 @@ function preencherFormularioVendedores() {
     } else {
         // Limpa os campos se nenhum vendedor estiver selecionado
         fEmpresa.value = "";
-        fCnpj.value = "";
         fEndereco.value = "";
         fCidade.value = "";
         fUf.value = "";
