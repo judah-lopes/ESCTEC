@@ -12,11 +12,11 @@ function preencherFormularioVendedores() {
 
     // Dados dos vendedores
     const dadosVendedores = {
-        vendedor1: { empresa: "ESCTEC", cnpj: "12.345.678/0001-91", endereco: "Av. D, 101", uf: "BA", cidade: "Xique-Xique", telefone: "444-444-4444", email: "ana.oliveira@esctec.com" },
-        vendedor2: { empresa: "ESCTEC", cnpj: "12.345.678/0001-91", endereco: "Rua A, 123", uf: "SP", cidade: "Ubatuba", telefone: "111-111-1111", email: "carlos.almeida@esctec.com" },
-        vendedor3: { empresa: "ESCTEC", cnpj: "12.345.678/0001-91", endereco: "Rua C, 789", uf: "MG", cidade: "Paracatu", telefone: "333-333-3333", email: "jose.santos@esctec.com" },
-        vendedor4: { empresa: "ESCTEC", cnpj: "12.345.678/0001-91", endereco: "Av. B, 456", uf: "RJ", cidade: "Belford Roxo",telefone: "222-222-2222", email: "mariana.silva@esctec.com" },
-        vendedor5: { empresa: "ESCTEC", cnpj: "12.345.678/0001-91", endereco: "Rua E, 202", uf: "RS", cidade: "Canoas",telefone: "555-555-5555", email: "pedro.costa@esctec.com" }
+        vendedor1: { empresa: "ESCTEC", endereco: "Av. D, 101", uf: "BA", cidade: "Xique-Xique", telefone: "444-444-4444", email: "ana.oliveira@esctec.com" },
+        vendedor2: { empresa: "ESCTEC", endereco: "Rua A, 123", uf: "SP", cidade: "Ubatuba", telefone: "111-111-1111", email: "carlos.almeida@esctec.com" },
+        vendedor3: { empresa: "ESCTEC", endereco: "Rua C, 789", uf: "MG", cidade: "Paracatu", telefone: "333-333-3333", email: "jose.santos@esctec.com" },
+        vendedor4: { empresa: "ESCTEC", endereco: "Av. B, 456", uf: "RJ", cidade: "Belford Roxo",telefone: "222-222-2222", email: "mariana.silva@esctec.com" },
+        vendedor5: { empresa: "ESCTEC", endereco: "Rua E, 202", uf: "RS", cidade: "Canoas",telefone: "555-555-5555", email: "pedro.costa@esctec.com" }
     };
 
     // Preencher campos com base no vendedor selecionado

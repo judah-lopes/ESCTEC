@@ -7,7 +7,7 @@ nav ul {
   padding: 0;
 }
 
-/* nav ul li {
+nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
-} */
+}
 
 /* Conteúdo principal */
 main {
@@ -120,6 +120,15 @@ form input[type="reset"]:hover {
 .produto-item span {
   display: block;
   margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
 }
 
 footer p {
