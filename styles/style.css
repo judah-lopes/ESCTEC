@@ -56,29 +56,42 @@ h1 {
 main {
     padding: 20px;
 }
+/* Centraliza a div dos botões */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+/* Estiliza os links como botões */
+.btn-group a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--cor-primaria); /* Cor de fundo do botão */
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
 .empresa {	
-    height: 80vh;
+    height: 90vh;
+    width: 90%;
+
+    font-size: 18px;
 }
 
 /* Rodapé */
 footer {
     background-color: var(--cor-primaria);
+    height: 50px;
     color: white!important;
     text-align: center;
+    line-height: 30px;
+    font-size: 16px;
     padding: 10px;
     /* position: absolute; */
     width: 100%;
     bottom: 0;
 }
 
-.valido {
-    color: green;
-    font-weight: bold;
-    border: green;
-}
-
-.invalido {
-    color: red;
-    font-weight: bold;
-    border: red;
-}
