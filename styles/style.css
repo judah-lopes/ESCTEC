@@ -99,13 +99,6 @@ footer {
     bottom: 0;
 }
 
-
-
-
-
-
-
-
 #injetaiframe {
     cursor: pointer;
 }
@@ -141,7 +134,7 @@ iframe {
 
 
 
-.btn-adicionar {
+.btn-adicionar-carrinho {
     background-color: #4CAF50;
 
     color: white;
@@ -165,13 +158,13 @@ iframe {
 }
 
 
-.btn-adicionar:hover {
+.btn-adicionar-carrinho:hover {
     background-color: #45a049;
 
 }
 
 
-.produto {
+/* .produto {
     border: 1px solid #ddd;
 
     padding: 20px;
@@ -192,4 +185,4 @@ iframe {
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    
-}
+} */
