@@ -7,7 +7,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Carrosel Pag Produtos*/
+/* Carrosel Pag Produtos
 .slider {
   width: 100%;
   max-width: 800px;
@@ -17,17 +17,17 @@ body {
 }
 
 /* Slides container */
-.slides {
+/* .slides {
   display: flex;
   transition: transform 1s ease-in-out;
-  width: 100%; /* 3 imagens, ajustado para rotação */
+  width: 100%; /* 3 imagens, ajustado para rotação 
 }
 
-/* Individual slide */
+/* Individual slide 
 .slides img {
   min-width: 100%;
   box-sizing:border-box;
-}
+} */
 
 .cards-produtos {
   display: grid;
