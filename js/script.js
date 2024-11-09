@@ -231,7 +231,7 @@ function exibirSaudacao() {
     saudacaoDiv.style.marginTop = "8px"; // Ajuste de espaçamento
     saudacaoDiv.style.display = "block"; // Exibe a div de saudação
 
-    // Oculta a saudação após 5 segundos
+    // Oculta a saudação após 3 segundos
     setTimeout(() => {
         saudacaoDiv.style.display = "none";
     }, 3000);

@@ -88,7 +88,7 @@ function injectCarrinho(event) {
         divItem.classList.add('item-carrinho');
 
         divItem.innerHTML = `
-            <img src="${item.imagem}" alt="${item.nome}">
+            <img src="../../${item.imagem}" alt="${item.nome}">
             <div>
                 <h4>${item.nome}</h4>
                 <p class="preco">R$ ${item.preco}</p>
